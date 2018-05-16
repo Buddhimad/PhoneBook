@@ -1,0 +1,20 @@
+<h1 class="display-4">Contacts</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>Names</th>
+            <th>Phone Numbers</th>
+        </tr>
+    </thead>
+    <tbody>
+            <% contact.forEach(function(contact){ %>
+                
+                    <tr>
+                            <td><%= contact.name %></td>
+                            <td><%= contact.phonenumber %></td>
+                    </tr>
+                   
+           <% }) %>
+    </tbody>
+</table>
